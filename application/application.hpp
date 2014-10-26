@@ -4,6 +4,7 @@
 #include <SFML/Graphics/Text.hpp>
 #include <SFML/System/Time.hpp>
 #include <string>
+#include "../Resources.hpp"
 
 class Application
 {
@@ -25,9 +26,11 @@ private:
     static const sf::Time   sTimePerFrame;
     // Context
     sf::RenderWindow        mWindow;
-    // TextureHolder
-    // FontHolder
-    // Sound+Music+Script holder
+    TextureHolder           mTextures;
+    FontHolder              mFonts;
+    SoundPlayer             mSounds;
+    MusicPlayer             mMusic;
+    // Script holder
     // PlayerController
     // OpponentController
 

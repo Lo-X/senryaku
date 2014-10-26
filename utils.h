@@ -9,6 +9,4 @@ void centerOrigin(sf::Sprite& sprite);
 void centerOrigin(sf::Text& text);
 void centerOrigin(Animation& animation);
 
-#include "utils.inl"
-
 #endif // UTILS_H

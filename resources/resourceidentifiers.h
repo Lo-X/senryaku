@@ -21,7 +21,7 @@ namespace Textures
 {
     enum ID
     {
-        Particle
+        // Whatever
     };
 }
 
@@ -33,7 +33,8 @@ namespace Fonts
 {
     enum ID
     {
-        Main
+        Main,
+        Japanese
     };
 }
 

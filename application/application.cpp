@@ -6,6 +6,10 @@ const sf::Time Application::sTimePerFrame = sf::seconds(1.f/60.f);
 Application::Application(unsigned int width, unsigned int height, const std::string &title) :
     mWindow(sf::VideoMode(width, height), title.c_str(), sf::Style::Close),
     // Context
+    mTextures(),
+    mFonts(),
+    mSounds(),
+    mMusic(),
     mStatisticsText(),
     mStatisticsUpdateTime(),
     mStatisticsNumFrames(0)
@@ -13,14 +17,15 @@ Application::Application(unsigned int width, unsigned int height, const std::str
     mWindow.setKeyRepeatEnabled(false);
 
     // Resources
-    //mFonts.load(Fonts::Main, "assets/fonts/sansation.ttf");
+    mFonts.load(Fonts::Main, "assets/fonts/minimal.otf");
+    mFonts.load(Fonts::Japanese, "assets/fonts/go3v2.ttf");
     //mTextures.load(Textures::Particle, "assets/textures/particle.png");
     //mScripts.registerFile(Scripts::HelloWorld, "assets/scripts/helloworld.lua");
 
-    //mStatisticsText.setFont(mFonts.get(Fonts::Main));
+    mStatisticsText.setFont(mFonts.get(Fonts::Main));
     mStatisticsText.setColor(sf::Color::White);
     mStatisticsText.setPosition(5.f,5.f);
-    mStatisticsText.setCharacterSize(10);
+    mStatisticsText.setCharacterSize(18);
 
     registerStates();
     //mStateStack.pushState(States::Title);
