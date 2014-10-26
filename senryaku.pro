@@ -14,7 +14,13 @@ SOURCES += main.cpp \
     resources/animation.cpp \
     resources/musicplayer.cpp \
     resources/particle.cpp \
-    resources/soundplayer.cpp
+    resources/soundplayer.cpp \
+    states/state.cpp \
+    states/statestack.cpp \
+    states/titlestate.cpp \
+    controllers/playercontroller.cpp \
+    events/command.cpp \
+    events/commandqueue.cpp
 
 HEADERS += \
     application/application.hpp \
@@ -27,5 +33,14 @@ HEADERS += \
     resources/resourceidentifiers.h \
     resources/soundplayer.h \
     Application.hpp \
-    Resources.hpp
+    Resources.hpp \
+    states/state.h \
+    states/stateidentifiers.h \
+    states/statestack.h \
+    states/titlestate.h \
+    controllers/playercontroller.h \
+    events/category.h \
+    events/command.h \
+    events/commandqueue.h \
+    resources/scriptplayer.h
 

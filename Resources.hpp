@@ -7,3 +7,4 @@
 #include "resources/animation.h"
 #include "resources/musicplayer.h"
 #include "resources/soundplayer.h"
+#include "resources/scriptplayer.h"
