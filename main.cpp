@@ -1,10 +1,11 @@
-#include <iostream>
+#include "application/application.hpp"
 
-using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    Application app(800, 600, "Senryaku");
+    app.run();
+
     return 0;
 }
 
