@@ -1,5 +1,5 @@
-#include "emitternode.hpp"
-#include "particlenode.hpp"
+#include <entities/emitternode.hpp>
+#include <entities/particlenode.hpp>
 
 EmitterNode::EmitterNode(Particle::Type type) :
     SceneNode(),

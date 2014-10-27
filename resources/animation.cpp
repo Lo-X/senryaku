@@ -1,4 +1,4 @@
-#include "animation.hpp"
+#include <resources/animation.hpp>
 
 Animation::Animation() :
     mSprite(),

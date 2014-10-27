@@ -1,4 +1,4 @@
-#include "application.hpp"
+#include <application/application.hpp>
 #include <SFML/Window/Event.hpp>
 
 const sf::Time Application::sTimePerFrame = sf::seconds(1.f/60.f);

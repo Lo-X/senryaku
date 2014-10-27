@@ -1,12 +1,11 @@
-#ifndef COMMAND_H
-#define COMMAND_H
+#pragma once
 
 #include <SFML/System.hpp>
 
 #include <functional>
 #include <cassert>
 
-#include "category.hpp"
+#include <events/category.hpp>
 
 class SceneNode;
 
@@ -27,5 +26,3 @@ std::function<void(SceneNode&, sf::Time)> derivedAction(Function fn)
         fn(static_cast<GameObject&>(node), dt);
     };
 }
-
-#endif // COMMAND_H

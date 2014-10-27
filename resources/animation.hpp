@@ -1,5 +1,4 @@
-#ifndef ANIMATION_H
-#define ANIMATION_H
+#pragma once
 
 #include <SFML/Graphics.hpp>
 #include <SFML/System/Time.hpp>
@@ -46,4 +45,3 @@ private:
     bool                mRepeat;
 };
 
-#endif // ANIMATION_H

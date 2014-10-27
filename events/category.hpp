@@ -1,5 +1,4 @@
-#ifndef CATEGORY_H
-#define CATEGORY_H
+#pragma once
 
 namespace Category
 {
@@ -15,4 +14,3 @@ namespace Category
     };
 }
 
-#endif // CATEGORY_H

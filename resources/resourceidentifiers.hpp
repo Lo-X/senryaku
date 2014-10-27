@@ -1,5 +1,4 @@
-#ifndef RESOURCE_IDENTIFIERS_H
-#define RESOURCE_IDENTIFIERS_H
+#pragma once
 
 // Forward declarations
 namespace sf
@@ -82,6 +81,3 @@ namespace Scripts
     };
 }
 
-
-
-#endif // RESOURCE_IDENTIFIERS_H

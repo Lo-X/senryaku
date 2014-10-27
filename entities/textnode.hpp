@@ -1,10 +1,9 @@
-#ifndef TEXTNODE_H
-#define TEXTNODE_H
+#pragma once
 
 #include <string>
 
-#include "scenenode.hpp"
-#include "../Resources.hpp"
+#include <entities/scenenode.hpp>
+#include <Resources.hpp>
 
 class TextNode : public SceneNode
 {
@@ -20,4 +19,3 @@ private:
     sf::Text        mText;
 };
 
-#endif // TEXTNODE_H

@@ -1,4 +1,4 @@
-#include "musicplayer.hpp"
+#include <resources/musicplayer.hpp>
 
 MusicPlayer::MusicPlayer() :
     mMusic(),

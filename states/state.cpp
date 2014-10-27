@@ -1,6 +1,6 @@
-#include "state.hpp"
-#include "statestack.hpp"
-#include "../controllers/playercontroller.hpp"
+#include <states/state.hpp>
+#include <states/statestack.hpp>
+#include <controllers/playercontroller.hpp>
 
 State::Context::Context(sf::RenderWindow &window, TextureHolder &textures, FontHolder &fonts, SoundPlayer& sounds, MusicPlayer& music, ScriptPlayer& scripts, PlayerController &player) :
     window(&window),

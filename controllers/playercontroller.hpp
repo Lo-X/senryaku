@@ -1,12 +1,11 @@
-#ifndef PLAYER_H
-#define PLAYER_H
+#pragma once
 
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
 
 #include <map>
 
-#include "../events/command.hpp"
+#include <events/command.hpp>
 
 class CommandQueue;
 
@@ -42,4 +41,3 @@ private:
     std::map<Action, Command>				mActionBinding;
 };
 
-#endif // PLAYER_H

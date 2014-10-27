@@ -1,5 +1,4 @@
-#ifndef RESOURCEHOLDER_H
-#define RESOURCEHOLDER_H
+#pragma once
 
 #include <map>
 #include <string>
@@ -73,4 +72,3 @@ void ResourceHolder<Resource, Identifier>::insertResource(Identifier id, std::un
     assert(inserted.second);
 }
 
-#endif // RESOURCEHOLDER_H

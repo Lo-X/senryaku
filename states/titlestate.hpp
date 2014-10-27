@@ -1,9 +1,8 @@
-#ifndef TITLESTATE_H
-#define TITLESTATE_H
+#pragma once
 
 #include <SFML/Graphics.hpp>
 
-#include "state.hpp"
+#include <states/state.hpp>
 
 class TitleState : public State
 {
@@ -19,4 +18,3 @@ private:
     sf::Time            mTextEffectTime;
 };
 
-#endif // TITLESTATE_H

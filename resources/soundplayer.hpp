@@ -1,13 +1,11 @@
-#ifndef SOUNDPLAYER_H
-#define SOUNDPLAYER_H
+#pragma once
 
 #include <SFML/Audio.hpp>
 #include <SFML/System.hpp>
 
 #include <list>
 
-#include "resourceholder.hpp"
-#include "resourceidentifiers.hpp"
+#include <Resources.hpp>
 
 class SoundPlayer : private sf::NonCopyable
 {
@@ -25,5 +23,3 @@ private:
     SoundHolder             mSoundBuffers;
     std::list<sf::Sound>    mSounds;
 };
-
-#endif // SOUNDPLAYER_H

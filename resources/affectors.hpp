@@ -1,5 +1,4 @@
-#ifndef AFFECTORS_H
-#define AFFECTORS_H
+#pragma once
 
 #include <SFML/System/Time.hpp>
 #include <SFML/System/Vector2.hpp>
@@ -17,4 +16,3 @@ std::function<void(Particle&, sf::Time)> derivedAffector(Affector& affector)
     };
 }
 
-#endif // AFFECTORS_H

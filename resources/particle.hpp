@@ -1,5 +1,4 @@
-#ifndef PARTICLE_H
-#define PARTICLE_H
+#pragma once
 
 #include <SFML/System/Vector2.hpp>
 #include <SFML/System/Time.hpp>
@@ -18,4 +17,3 @@ struct Particle
     sf::Time        lifetime;
 };
 
-#endif // PARTICLE_H

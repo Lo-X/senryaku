@@ -1,5 +1,4 @@
-#ifndef MUSICPLAYER_H
-#define MUSICPLAYER_H
+#pragma once
 
 #include <SFML/Audio.hpp>
 #include <SFML/System.hpp>
@@ -7,8 +6,7 @@
 #include <map>
 #include <string>
 
-#include "resourceholder.hpp"
-#include "resourceidentifiers.hpp"
+#include <Resources.hpp>
 
 class MusicPlayer : private sf::NonCopyable
 {
@@ -26,4 +24,3 @@ private:
     float       mVolume;
 };
 
-#endif // MUSICPLAYER_H

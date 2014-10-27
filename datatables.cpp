@@ -1,5 +1,5 @@
-#include "datatables.hpp"
-#include "resources/particle.hpp"
+#include <datatables.hpp>
+#include <resources/particle.hpp>
 
 
 std::vector<ParticleData> initializeParticleData()

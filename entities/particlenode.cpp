@@ -1,5 +1,5 @@
-#include "particlenode.hpp"
-#include "../datatables.hpp"
+#include <entities/particlenode.hpp>
+#include <datatables.hpp>
 
 #include <iostream>
 

@@ -1,9 +1,8 @@
-#ifndef EMITTERNODE_H
-#define EMITTERNODE_H
+#pragma once
 
-#include "scenenode.hpp"
-#include "../resources/particle.hpp"
-#include "../events/commandqueue.hpp"
+#include <entities/scenenode.hpp>
+#include <resources/particle.hpp>
+#include <events/commandqueue.hpp>
 
 class ParticleNode;
 
@@ -22,5 +21,3 @@ private:
     Particle::Type  mType;
     ParticleNode*   mParticleSystem;
 };
-
-#endif // EMITTERNODE_H

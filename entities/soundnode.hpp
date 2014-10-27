@@ -1,8 +1,7 @@
-#ifndef SOUNDNODE_H
-#define SOUNDNODE_H
+#pragma once
 
-#include "scenenode.hpp"
-#include "../resources/soundplayer.hpp"
+#include <entities/scenenode.hpp>
+#include <resources/soundplayer.hpp>
 
 class SoundNode : public SceneNode
 {
@@ -17,4 +16,3 @@ private:
     SoundPlayer&    mPlayer;
 };
 
-#endif // SOUNDNODE_H

@@ -1,4 +1,4 @@
-#include "commandqueue.hpp"
+#include <events/commandqueue.hpp>
 
 void CommandQueue::push(const Command &command)
 {

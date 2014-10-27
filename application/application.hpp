@@ -4,9 +4,9 @@
 #include <SFML/Graphics/Text.hpp>
 #include <SFML/System/Time.hpp>
 #include <string>
-#include "../Resources.hpp"
-#include "../Controllers.hpp"
-#include "../States.hpp"
+#include <Resources.hpp>
+#include <Controllers.hpp>
+#include <States.hpp>
 
 class Application
 {

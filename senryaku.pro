@@ -6,6 +6,7 @@ CONFIG -= qt
 LIBS += -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio -lsfml-network -llua -ldl
 QMAKE_CXXFLAGS += -std=c++11
 OBJECTS_DIR = .obj
+INCLUDEPATH += .
 
 SOURCES += main.cpp \
     application/application.cpp \
@@ -28,7 +29,8 @@ SOURCES += main.cpp \
     entities/spritenode.cpp \
     entities/textnode.cpp \
     entities/particlenode.cpp \
-    datatables.cpp
+    datatables.cpp \
+    states/gamestate.cpp
 
 HEADERS += \
     application/application.hpp \
@@ -62,5 +64,6 @@ HEADERS += \
     entities/textnode.hpp \
     Entities.hpp \
     entities/particlenode.hpp \
-    datatables.hpp
+    datatables.hpp \
+    states/gamestate.hpp
 

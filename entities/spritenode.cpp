@@ -1,4 +1,4 @@
-#include "spritenode.hpp"
+#include <entities/spritenode.hpp>
 
 SpriteNode::SpriteNode(const sf::Texture &texture) :
     mSprite(texture)

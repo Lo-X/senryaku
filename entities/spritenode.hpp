@@ -1,7 +1,6 @@
-#ifndef SPRITENODE_H
-#define SPRITENODE_H
+#pragma once
 
-#include "scenenode.hpp"
+#include <entities/scenenode.hpp>
 
 class SpriteNode : public SceneNode
 {
@@ -16,4 +15,3 @@ private:
     sf::Sprite      mSprite;
 };
 
-#endif // SPRITENODE_H

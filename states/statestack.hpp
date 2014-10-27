@@ -1,5 +1,4 @@
-#ifndef STATESTACK_H
-#define STATESTACK_H
+#pragma once
 
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
@@ -9,7 +8,7 @@
 #include <functional>
 #include <map>
 
-#include "state.hpp"
+#include <states/state.hpp>
 
 class StateStack : private sf::NonCopyable
 {
@@ -64,4 +63,3 @@ void StateStack::registerState(States::ID id)
     };
 }
 
-#endif // STATESTACK_H

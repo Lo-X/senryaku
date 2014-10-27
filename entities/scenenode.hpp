@@ -1,5 +1,4 @@
-#ifndef SCENENODE_H
-#define SCENENODE_H
+#pragma once
 
 #include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
@@ -8,7 +7,7 @@
 #include <memory>
 #include <cassert>
 
-#include "../events/command.hpp"
+#include <events/command.hpp>
 
 class SceneNode : public sf::Transformable, public sf::Drawable, private sf::NonCopyable
 {
@@ -47,4 +46,3 @@ private:
     Category::Type          mDefaultCategory;
 };
 
-#endif // SCENENODE_H

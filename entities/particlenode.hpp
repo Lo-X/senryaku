@@ -1,15 +1,13 @@
-#ifndef PARTICLENODE_H
-#define PARTICLENODE_H
+#pragma once
 
 #include <SFML/Graphics/VertexArray.hpp>
 
 #include <deque>
 #include <vector>
 
-#include "scenenode.hpp"
-#include "../resources/resourceholder.hpp"
-#include "../Resources.hpp"
-#include "../events/commandqueue.hpp"
+#include <entities/scenenode.hpp>
+#include <Resources.hpp>
+#include <events/commandqueue.hpp>
 
 class ParticleNode : public SceneNode
 {
@@ -41,4 +39,3 @@ private:
     mutable bool            mNeedsVertexUpdate;
 };
 
-#endif // PARTICLENODE_H

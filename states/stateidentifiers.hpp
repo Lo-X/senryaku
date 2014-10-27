@@ -1,5 +1,4 @@
-#ifndef STATEIDENTIFIERS_H
-#define STATEIDENTIFIERS_H
+#pragma once
 
 namespace States
 {
@@ -7,14 +6,13 @@ namespace States
     {
         None,
         Title,
-        Menu,
+        MainMenu,
         Settings,
         GameLocal,
         GameOnline,
         Loading,
         GameOver,
-        Pause
+        GameMenu
     };
 }
 
-#endif // STATEIDENTIFIERS_H

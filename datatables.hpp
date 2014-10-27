@@ -1,5 +1,4 @@
-#ifndef DATATABLES_H
-#define DATATABLES_H
+#pragma once
 
 #include <SFML/System/Time.hpp>
 #include <SFML/Graphics/Color.hpp>
@@ -8,7 +7,7 @@
 #include <vector>
 #include <functional>
 
-#include "resources/resourceidentifiers.hpp"
+#include <resources/resourceidentifiers.hpp>
 
 struct ParticleData
 {
@@ -19,5 +18,3 @@ struct ParticleData
 // This function inits each particle types with its basic data
 std::vector<ParticleData>	initializeParticleData();
 
-
-#endif // DATATABLES_H

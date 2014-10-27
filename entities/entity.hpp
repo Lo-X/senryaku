@@ -1,10 +1,9 @@
-#ifndef ENTITY_H
-#define ENTITY_H
+#pragma once
 
 #include <SFML/System/Time.hpp>
 
-#include "scenenode.hpp"
-#include "soundnode.hpp"
+#include <entities/scenenode.hpp>
+#include <entities/soundnode.hpp>
 
 class CommandQueue;
 
@@ -28,4 +27,3 @@ private:
     int         mHealthpoints;
 };
 
-#endif // ENTITY_H

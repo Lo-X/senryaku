@@ -1,13 +1,12 @@
-#ifndef STATE_H
-#define STATE_H
+#pragma once
 
 #include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
 
 #include <memory>
 
-#include "stateidentifiers.hpp"
-#include "../Resources.hpp"
+#include <states/stateidentifiers.hpp>
+#include <Resources.hpp>
 
 class StateStack;
 class PlayerController;
@@ -53,4 +52,3 @@ private:
     Context         mContext;
 };
 
-#endif // STATE_H

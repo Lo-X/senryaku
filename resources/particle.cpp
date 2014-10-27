@@ -1,2 +1,2 @@
-#include "particle.hpp"
+#include <resources/particle.hpp>
 

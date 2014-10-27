@@ -1,9 +1,8 @@
-#ifndef COMMANDQUEUE_H
-#define COMMANDQUEUE_H
+#pragma once
 
 #include <queue>
 
-#include "command.hpp"
+#include <events/command.hpp>
 
 class CommandQueue
 {
@@ -16,4 +15,3 @@ private:
     std::queue<Command> mQueue;
 };
 
-#endif // COMMANDQUEUE_H
