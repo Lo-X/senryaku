@@ -1,10 +1,10 @@
 #pragma once
 
-#include "resources/resourceholder.h"
-#include "resources/resourceidentifiers.h"
-#include "resources/particle.h"
-#include "resources/affectors.h"
-#include "resources/animation.h"
-#include "resources/musicplayer.h"
-#include "resources/soundplayer.h"
-#include "resources/scriptplayer.h"
+#include "resources/resourceholder.hpp"
+#include "resources/resourceidentifiers.hpp"
+#include "resources/particle.hpp"
+#include "resources/affectors.hpp"
+#include "resources/animation.hpp"
+#include "resources/musicplayer.hpp"
+#include "resources/soundplayer.hpp"
+#include "resources/scriptplayer.hpp"

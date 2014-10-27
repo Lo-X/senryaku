@@ -3,7 +3,7 @@
 
 #include <queue>
 
-#include "command.h"
+#include "command.hpp"
 
 class CommandQueue
 {

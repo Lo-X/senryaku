@@ -6,7 +6,7 @@
 
 #include <memory>
 
-#include "stateidentifiers.h"
+#include "stateidentifiers.hpp"
 #include "../Resources.hpp"
 
 class StateStack;

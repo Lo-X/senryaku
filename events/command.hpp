@@ -6,7 +6,7 @@
 #include <functional>
 #include <cassert>
 
-#include "category.h"
+#include "category.hpp"
 
 class SceneNode;
 

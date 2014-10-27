@@ -24,23 +24,26 @@ SOURCES += main.cpp \
 
 HEADERS += \
     application/application.hpp \
-    utils.h \
-    resources/affectors.h \
-    resources/animation.h \
-    resources/musicplayer.h \
-    resources/particle.h \
-    resources/resourceholder.h \
-    resources/resourceidentifiers.h \
-    resources/soundplayer.h \
     Application.hpp \
     Resources.hpp \
-    states/state.h \
-    states/stateidentifiers.h \
-    states/statestack.h \
-    states/titlestate.h \
-    controllers/playercontroller.h \
-    events/category.h \
-    events/command.h \
-    events/commandqueue.h \
-    resources/scriptplayer.h
+    controllers/playercontroller.hpp \
+    events/category.hpp \
+    events/command.hpp \
+    events/commandqueue.hpp \
+    resources/affectors.hpp \
+    resources/animation.hpp \
+    resources/musicplayer.hpp \
+    resources/particle.hpp \
+    resources/resourceholder.hpp \
+    resources/resourceidentifiers.hpp \
+    resources/scriptplayer.hpp \
+    resources/soundplayer.hpp \
+    states/state.hpp \
+    states/stateidentifiers.hpp \
+    states/statestack.hpp \
+    states/titlestate.hpp \
+    utils.hpp \
+    States.hpp \
+    Events.hpp \
+    Controllers.hpp
 

@@ -1,5 +1,5 @@
-#include "titlestate.h"
-#include "../utils.h"
+#include "titlestate.hpp"
+#include "../utils.hpp"
 
 TitleState::TitleState(StateStack &stack, Context context) :
     State(stack, context),

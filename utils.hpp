@@ -2,7 +2,7 @@
 #define UTILS_H
 
 #include <SFML/Graphics.hpp>
-#include "resources/animation.h"
+#include "resources/animation.hpp"
 
 // Helpers to set the origin of sprites/text/... at center
 void centerOrigin(sf::Sprite& sprite);
