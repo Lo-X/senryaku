@@ -9,6 +9,7 @@ namespace Server
         PlayerJoined,
         PlayerEmote,
         PlayerForfait,
+        NextTurn,
         PieceMoved,
         PieceSpawn,
         PieceEaten,
@@ -21,6 +22,7 @@ namespace Client
 {
     enum PacketType
     {
+        Ping,
         MovePiece,
         Emote,
         Forfait,

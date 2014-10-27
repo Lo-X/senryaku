@@ -30,7 +30,8 @@ SOURCES += main.cpp \
     entities/textnode.cpp \
     entities/particlenode.cpp \
     datatables.cpp \
-    states/gamestate.cpp
+    states/gamestate.cpp \
+    network/gameserver.cpp
 
 HEADERS += \
     application/application.hpp \
@@ -66,5 +67,6 @@ HEADERS += \
     entities/particlenode.hpp \
     datatables.hpp \
     states/gamestate.hpp \
-    network/networkprotocol.hpp
+    network/networkprotocol.hpp \
+    network/gameserver.hpp
 
