@@ -20,7 +20,15 @@ SOURCES += main.cpp \
     states/titlestate.cpp \
     controllers/playercontroller.cpp \
     events/command.cpp \
-    events/commandqueue.cpp
+    events/commandqueue.cpp \
+    entities/emitternode.cpp \
+    entities/entity.cpp \
+    entities/scenenode.cpp \
+    entities/soundnode.cpp \
+    entities/spritenode.cpp \
+    entities/textnode.cpp \
+    entities/particlenode.cpp \
+    datatables.cpp
 
 HEADERS += \
     application/application.hpp \
@@ -45,5 +53,14 @@ HEADERS += \
     utils.hpp \
     States.hpp \
     Events.hpp \
-    Controllers.hpp
+    Controllers.hpp \
+    entities/emitternode.hpp \
+    entities/entity.hpp \
+    entities/scenenode.hpp \
+    entities/soundnode.hpp \
+    entities/spritenode.hpp \
+    entities/textnode.hpp \
+    Entities.hpp \
+    entities/particlenode.hpp \
+    datatables.hpp
 
