@@ -10,6 +10,11 @@ Application::Application(unsigned int width, unsigned int height, const std::str
     mFonts(),
     mSounds(),
     mMusic(),
+    mScripts(),
+    mPlayer(),
+    // States
+    mStateStack(State::Context(mWindow, mTextures, mFonts, mSounds, mMusic, mScripts, mPlayer)),
+    // Statistics
     mStatisticsText(),
     mStatisticsUpdateTime(),
     mStatisticsNumFrames(0)
@@ -28,7 +33,7 @@ Application::Application(unsigned int width, unsigned int height, const std::str
     mStatisticsText.setCharacterSize(18);
 
     registerStates();
-    //mStateStack.pushState(States::Title);
+    mStateStack.pushState(States::Title);
 }
 
 
@@ -49,8 +54,8 @@ void Application::run()
             update(sTimePerFrame);
 
             // Check inside this loop, because stack might be empty before update() call
-            //if (mStateStack.isEmpty())
-                //mWindow.close();
+            if (mStateStack.isEmpty())
+                mWindow.close();
         }
 
         updateStatistics(elapsedTime);
@@ -68,7 +73,7 @@ void Application::processEvents()
     sf::Event event;
     while(mWindow.pollEvent(event))
     {
-        //mStateStack.handleEvent(event);
+        mStateStack.handleEvent(event);
         if(event.type == sf::Event::Closed)
             mWindow.close();
     }
@@ -76,13 +81,13 @@ void Application::processEvents()
 
 void Application::update(sf::Time dt)
 {
-    //mStateStack.update(dt);
+    mStateStack.update(dt);
 }
 
 void Application::render()
 {
     mWindow.clear();
-    //mStateStack.draw();
+    mStateStack.draw();
 
     mWindow.setView(mWindow.getDefaultView());
     mWindow.draw(mStatisticsText);
@@ -91,7 +96,7 @@ void Application::render()
 
 void Application::registerStates()
 {
-    //mStateStack.registerState<TitleState>(States::Title);
+    mStateStack.registerState<TitleState>(States::Title);
     /*mStateStack.registerState<MenuState>(States::Menu);
     mStateStack.registerState<GameState>(States::Game);
     mStateStack.registerState<PauseState>(States::Pause);

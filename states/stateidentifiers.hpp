@@ -9,7 +9,8 @@ namespace States
         Title,
         Menu,
         Settings,
-        Game,
+        GameLocal,
+        GameOnline,
         Loading,
         GameOver,
         Pause

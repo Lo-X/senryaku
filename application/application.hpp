@@ -5,6 +5,8 @@
 #include <SFML/System/Time.hpp>
 #include <string>
 #include "../Resources.hpp"
+#include "../Controllers.hpp"
+#include "../States.hpp"
 
 class Application
 {
@@ -30,11 +32,11 @@ private:
     FontHolder              mFonts;
     SoundPlayer             mSounds;
     MusicPlayer             mMusic;
-    // Script holder
-    // PlayerController
+    ScriptPlayer            mScripts;
+    PlayerController        mPlayer;
     // OpponentController
 
-    // StateStack
+    StateStack              mStateStack;
 
     // Statistics
     sf::Text                mStatisticsText;
