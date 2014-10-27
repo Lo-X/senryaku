@@ -65,5 +65,6 @@ HEADERS += \
     Entities.hpp \
     entities/particlenode.hpp \
     datatables.hpp \
-    states/gamestate.hpp
+    states/gamestate.hpp \
+    network/networkprotocol.hpp
 
