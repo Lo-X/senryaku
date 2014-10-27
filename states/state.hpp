@@ -37,6 +37,8 @@ public:
     virtual bool    update(sf::Time dt) = 0;
     virtual bool    handleEvent(const sf::Event& event) = 0;
 
+    virtual void    onCreate();
+    virtual void    onDestroy();
     virtual void    onPause();
     virtual void    onResume();
 
