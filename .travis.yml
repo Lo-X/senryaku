@@ -2,18 +2,20 @@ language: cpp
 compiler:
     - gcc
 before_install:
-    - sudo apt-get update
+    - sudo apt-add-repository -y ppa:beineri/opt-qt501
+    - sudo apt-get update -qq
     - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
     - sudo apt-get -qq update
     - sudo apt-get -qq install g++-4.8
     - wget http://www.sfml-dev.org/download/sfml/2.1/SFML-2.1-linux-gcc-64bits.tar.bz2
     - tar xf SFML-2.1-linux-gcc-64bits.tar.bz2
     - sudo cp -r SFML-2.1/lib/* /usr/local/lib/.
-    - sudo apt-get install libpthread-stubs0-dev libgl1-mesa-dev libx11-dev
-    - sudo apt-get install libxrandr-dev libfreetype6-dev libglew1.5-dev
-    - sudo apt-get install libjpeg8-dev libgpgme11-dev libsndfile1-dev libopenal-dev libjpeg62
-    - sudo apt-get install make qt5-qmake qt5-default
+    - sudo apt-get -qq install libpthread-stubs0-dev libgl1-mesa-dev libx11-dev
+    - sudo apt-get -qq install libxrandr-dev libfreetype6-dev libglew1.5-dev
+    - sudo apt-get -qq install libjpeg8-dev libgpgme11-dev libsndfile1-dev libopenal-dev libjpeg62
+    - sudo apt-get -qq install make qt5-meta-minimal libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
 script:
     - gcc -v
+    - qmake -v
     - qmake
     - make
