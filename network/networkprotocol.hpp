@@ -1,11 +1,12 @@
 #pragma once
 
-const unsigned short ServerPort = 7012;
+const unsigned short ServerPort = 27012;
 
 namespace Server
 {
     enum PacketType
     {
+        Pong,
         PlayerJoined,
         PlayerEmote,
         PlayerForfait,
