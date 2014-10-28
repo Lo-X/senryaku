@@ -3,7 +3,7 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-LIBS += -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio -lsfml-network -llua -ldl
+LIBS += -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio -lsfml-network
 QMAKE_CXXFLAGS += -std=c++11
 OBJECTS_DIR = .obj
 INCLUDEPATH += .
@@ -69,4 +69,7 @@ HEADERS += \
     states/gamestate.hpp \
     network/networkprotocol.hpp \
     network/gameserver.hpp
+
+OTHER_FILES += \
+    .travis.yml
 
