@@ -99,8 +99,10 @@ void GameServer::handleIncomingPackets()
 
 void GameServer::handleIncomingPacket(sf::Packet &packet, RemotePeer &from, bool &detectedTimeOut)
 {
-    int packetType;
+    sf::Int32 packetType;
     packet >> packetType;
+
+    std::cout << "[Server] Handling packet " << packetType << std::endl;
 
     switch(packetType)
     {
@@ -109,6 +111,13 @@ void GameServer::handleIncomingPacket(sf::Packet &packet, RemotePeer &from, bool
             from.timedOut = true;
             detectedTimeOut = true;
             break;
+
+        case Client::Ping:
+        {
+            sf::Packet packet;
+            packet << static_cast<sf::Int32>(Server::Pong);
+            from.socket.send(packet);
+        } break;
 
             // ...
 
@@ -123,7 +132,7 @@ void GameServer::handleIncomingConnections()
     if(!mListeningState)
         return;
 
-    if(mListenerSocket.accept(mPeers[mConnectedPlayers]->socket))
+    if(mListenerSocket.accept(mPeers[mConnectedPlayers]->socket) == sf::TcpListener::Done)
     {
         // Set the new player info
         mPeers[mConnectedPlayers]->ready = true;
@@ -131,7 +140,7 @@ void GameServer::handleIncomingConnections()
 
         mConnectedPlayers++;
 
-        std::cout << "New client connected !" << std::endl;
+        std::cout << "[Server] New client connected (#" << mConnectedPlayers << ") !" << std::endl;
 
         if(mConnectedPlayers >= mMaxConnectedPlayers)
             setListening(false);
@@ -146,6 +155,8 @@ void GameServer::handleDisconnections()
     {
         if((*it)->timedOut)
         {
+            std::cout << "[Server] A player has disconnected !" << std::endl;
+
             mConnectedPlayers--;
             it = mPeers.erase(it);
 
