@@ -6,3 +6,4 @@
 
 // Specific states
 #include <states/titlestate.hpp>
+#include <states/gamestate.hpp>

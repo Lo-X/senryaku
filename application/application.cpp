@@ -33,7 +33,8 @@ Application::Application(unsigned int width, unsigned int height, const std::str
     mStatisticsText.setCharacterSize(18);
 
     registerStates();
-    mStateStack.pushState(States::Title);
+    mStateStack.pushState(States::GameOnline);
+    //mStateStack.pushState(States::Title);
 }
 
 
@@ -97,8 +98,9 @@ void Application::render()
 void Application::registerStates()
 {
     mStateStack.registerState<TitleState>(States::Title);
+    mStateStack.registerState<GameState>(States::GameOnline);
+    mStateStack.registerState<GameState>(States::GameLocal);
     /*mStateStack.registerState<MenuState>(States::Menu);
-    mStateStack.registerState<GameState>(States::Game);
     mStateStack.registerState<PauseState>(States::Pause);
     mStateStack.registerState<LoadingState>(States::Loading);
     mStateStack.registerState<GameOverState>(States::GameOver);*/
