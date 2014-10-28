@@ -3,7 +3,7 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-LIBS += -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio -lsfml-network -llua -ldl
+LIBS += -lsfml-system -lsfml-window -lsfml-graphics -lsfml-audio -lsfml-network
 QMAKE_CXXFLAGS += -std=c++11
 OBJECTS_DIR = .obj
 INCLUDEPATH += .
@@ -30,7 +30,8 @@ SOURCES += main.cpp \
     entities/textnode.cpp \
     entities/particlenode.cpp \
     datatables.cpp \
-    states/gamestate.cpp
+    states/gamestate.cpp \
+    network/gameserver.cpp
 
 HEADERS += \
     application/application.hpp \
@@ -65,5 +66,10 @@ HEADERS += \
     Entities.hpp \
     entities/particlenode.hpp \
     datatables.hpp \
-    states/gamestate.hpp
+    states/gamestate.hpp \
+    network/networkprotocol.hpp \
+    network/gameserver.hpp
+
+OTHER_FILES += \
+    .travis.yml
 
