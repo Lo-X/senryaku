@@ -34,7 +34,8 @@ SOURCES += main.cpp \
     network/gameserver.cpp \
     entities/models/pawn.cpp \
     entities/models/board.cpp \
-    entities/models/player.cpp
+    entities/models/player.cpp \
+    tests/entities.cpp
 
 HEADERS += \
     application/application.hpp \

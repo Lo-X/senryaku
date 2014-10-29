@@ -22,3 +22,4 @@ script:
     - qmake -qt=qt5 -v
     - qmake -qt=qt5
     - make
+    - ./senryaku -test
