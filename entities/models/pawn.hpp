@@ -21,7 +21,7 @@ public:
         Knight, // Promotion of: Novice
     };
 
-    typedef std::unique_ptr<Pawn> PawnPtr;
+    typedef std::shared_ptr<Pawn> PawnPtr;
 
 public:
     Pawn(Player& owner);
