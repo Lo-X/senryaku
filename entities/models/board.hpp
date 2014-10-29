@@ -1,5 +1,4 @@
-#ifndef BOARD_HPP
-#define BOARD_HPP
+#pragma once
 
 #include <entities/models/pawn.hpp>
 
@@ -17,5 +16,3 @@ public:
     std::set<sf::Vector2u>                  promotionSquares;
     std::map<Pawn::PawnPtr, sf::Vector2u>   pawns;
 };
-
-#endif // BOARD_HPP

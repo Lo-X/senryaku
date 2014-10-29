@@ -1,4 +1,4 @@
-#include "board.hpp"
+#include <entities/models/board.hpp>
 
 Board::Board(sf::Vector2u size) :
     size(size)
