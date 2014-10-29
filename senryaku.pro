@@ -33,7 +33,8 @@ SOURCES += main.cpp \
     states/gamestate.cpp \
     network/gameserver.cpp \
     entities/models/pawn.cpp \
-    entities/models/board.cpp
+    entities/models/board.cpp \
+    entities/models/player.cpp
 
 HEADERS += \
     application/application.hpp \
@@ -72,7 +73,8 @@ HEADERS += \
     network/networkprotocol.hpp \
     network/gameserver.hpp \
     entities/models/pawn.hpp \
-    entities/models/board.hpp
+    entities/models/board.hpp \
+    entities/models/player.hpp
 
 OTHER_FILES += \
     .travis.yml
