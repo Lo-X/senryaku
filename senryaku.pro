@@ -31,7 +31,9 @@ SOURCES += main.cpp \
     entities/particlenode.cpp \
     datatables.cpp \
     states/gamestate.cpp \
-    network/gameserver.cpp
+    network/gameserver.cpp \
+    entities/models/pawn.cpp \
+    entities/models/board.cpp
 
 HEADERS += \
     application/application.hpp \
@@ -68,7 +70,9 @@ HEADERS += \
     datatables.hpp \
     states/gamestate.hpp \
     network/networkprotocol.hpp \
-    network/gameserver.hpp
+    network/gameserver.hpp \
+    entities/models/pawn.hpp \
+    entities/models/board.hpp
 
 OTHER_FILES += \
     .travis.yml
