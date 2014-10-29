@@ -6,6 +6,8 @@
 #include <vector>
 #include <memory>
 
+class Player;
+
 class Pawn
 {
 public:
@@ -22,7 +24,7 @@ public:
     typedef std::unique_ptr<Pawn> PawnPtr;
 
 public:
-    Pawn();
+    Pawn(Player& owner);
 
     void            promote();
     void            demote();
@@ -31,6 +33,7 @@ private:
     void            swapWithPromotion();
 
 public:
+    Player&                     owner;
     std::string                 name;
     PawnType                    type;
     std::vector<sf::Vector2i>   movements;

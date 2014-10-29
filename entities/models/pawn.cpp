@@ -1,6 +1,8 @@
 #include <entities/models/pawn.hpp>
+#include <entities/models/player.hpp>
 
-Pawn::Pawn() :
+Pawn::Pawn(Player &owner) :
+    owner(owner),
     name("Unamed Pawn"),
     type(PawnType::Unknown),
     hasPromotion(false),
@@ -31,7 +33,7 @@ void Pawn::demote()
 
 void Pawn::swapWithPromotion()
 {
-    PawnPtr backup(new Pawn());
+    PawnPtr backup(new Pawn(owner));
     backup->name = name;
     backup->type = type;
     backup->movements = movements;
