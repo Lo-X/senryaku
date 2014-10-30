@@ -36,11 +36,13 @@ void Pawn::swapWithPromotion()
     PawnPtr backup(new Pawn(owner));
     backup->name = name;
     backup->type = type;
+    backup->owner = owner;
     backup->movements = movements;
     backup->hasPromotion = hasPromotion;
     backup->isPromoted = isPromoted;
 
     // Swap
+    owner = promotion->owner;
     name = promotion->name;
     type = promotion->type;
     movements = promotion->movements;

@@ -4,7 +4,7 @@
 #include <entities/models/player.hpp>
 
 #include <map>
-#include <set>
+#include <vector>
 
 class Board
 {
@@ -23,6 +23,6 @@ public:
 
 public:
     sf::Vector2u                            size;
-    std::set<sf::Vector2u>                  promotionSquares;
-    std::set<BoardPawn>                     pawns;
+    std::vector<sf::Vector2u>               promotionSquares;
+    std::vector<BoardPawn>                  pawns;
 };
