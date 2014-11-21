@@ -20,6 +20,11 @@ public:
     Board(unsigned int xSquareNb, unsigned int ySquareNb);
 
     void            eatPawn(sf::Vector2u position, Player& activePlayer);
+    bool            canMovePawn(sf::Vector2u origin, sf::Vector2u destination);
+    bool            movePawn(sf::Vector2u origin, sf::Vector2u destination);
+
+private:
+    bool            canMove(sf::Vector2u origin, sf::Vector2u destination, bool doTheMove = false);
 
 public:
     sf::Vector2u                            size;
